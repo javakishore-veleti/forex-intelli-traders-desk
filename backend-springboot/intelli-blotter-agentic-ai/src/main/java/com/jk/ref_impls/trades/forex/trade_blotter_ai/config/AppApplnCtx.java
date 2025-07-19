@@ -1,4 +1,4 @@
-package com.jk.ref_impls.trades.forex.trade_blotter_ai.api;
+package com.jk.ref_impls.trades.forex.trade_blotter_ai.config;
 
 import jakarta.annotation.PostConstruct;
 import lombok.Getter;

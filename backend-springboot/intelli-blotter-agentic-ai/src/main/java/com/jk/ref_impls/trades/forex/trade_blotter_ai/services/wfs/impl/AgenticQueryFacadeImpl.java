@@ -1,6 +1,7 @@
 package com.jk.ref_impls.trades.forex.trade_blotter_ai.services.wfs.impl;
 
-import com.jk.ref_impls.trades.forex.trade_blotter_ai.api.AppApplnCtx;
+import com.jk.ref_impls.trades.forex.trade_blotter_ai.config.AppApplnCtx;
+import com.jk.ref_impls.trades.forex.trade_blotter_ai.dto.UserQueryCtx;
 import com.jk.ref_impls.trades.forex.trade_blotter_ai.dto.UserQueryReq;
 import com.jk.ref_impls.trades.forex.trade_blotter_ai.dto.UserResp;
 import com.jk.ref_impls.trades.forex.trade_blotter_ai.services.wfs.AgentWfTask;
@@ -23,8 +24,8 @@ public class AgenticQueryFacadeImpl implements AgenticQueryFacade {
     private List<AgentWfTask> tasks;
 
     @Override
-    public UserResp execute(UserQueryReq queryReq, UserResp userResp) {
-        tasks.forEach(task -> task.execute(queryReq, userResp));
+    public UserResp execute(UserQueryReq queryReq, UserResp userResp, UserQueryCtx userQueryCtx) {
+        tasks.forEach(task -> task.execute(queryReq, userResp, userQueryCtx));
         return userResp;
     }
 

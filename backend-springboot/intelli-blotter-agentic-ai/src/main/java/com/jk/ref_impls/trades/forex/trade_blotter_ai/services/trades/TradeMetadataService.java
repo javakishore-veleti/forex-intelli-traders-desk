@@ -1,10 +1,10 @@
-package com.jk.ref_impls.trades.forex.trade_blotter_ai.services.wfs;
+package com.jk.ref_impls.trades.forex.trade_blotter_ai.services.trades;
 
 import com.jk.ref_impls.trades.forex.trade_blotter_ai.dto.UserQueryCtx;
 import com.jk.ref_impls.trades.forex.trade_blotter_ai.dto.UserQueryReq;
 import com.jk.ref_impls.trades.forex.trade_blotter_ai.dto.UserResp;
 
-public interface AgentWfTask {
+public interface TradeMetadataService {
 
-    int execute(UserQueryReq req, UserResp resp, UserQueryCtx userQueryCtx);
+    int enrichTrade(UserQueryReq req, UserResp resp, UserQueryCtx userQueryCtx);
 }

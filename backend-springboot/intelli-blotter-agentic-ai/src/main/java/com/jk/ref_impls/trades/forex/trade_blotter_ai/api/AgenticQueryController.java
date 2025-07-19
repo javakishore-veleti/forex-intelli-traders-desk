@@ -1,5 +1,6 @@
 package com.jk.ref_impls.trades.forex.trade_blotter_ai.api;
 
+import com.jk.ref_impls.trades.forex.trade_blotter_ai.dto.UserQueryCtx;
 import com.jk.ref_impls.trades.forex.trade_blotter_ai.dto.UserQueryReq;
 import com.jk.ref_impls.trades.forex.trade_blotter_ai.dto.UserResp;
 import com.jk.ref_impls.trades.forex.trade_blotter_ai.services.wfs.AgenticQueryFacade;
@@ -40,8 +41,9 @@ public class AgenticQueryController {
     ) {
 
         UserResp response = new UserResp();
+        UserQueryCtx userQueryCtx = new UserQueryCtx();
 
-        agenticQueryFacade.execute(request, response);
+        agenticQueryFacade.execute(request, response, userQueryCtx);
 
 
         return ResponseEntity.ok(response);

@@ -1,6 +1,7 @@
 package com.jk.ref_impls.trades.forex.trade_blotter_ai.services.wfs.impl.tasks;
 
 import com.jk.ref_impls.trades.forex.trade_blotter_ai.constants.AppWfConstants;
+import com.jk.ref_impls.trades.forex.trade_blotter_ai.dto.UserQueryCtx;
 import com.jk.ref_impls.trades.forex.trade_blotter_ai.dto.UserQueryReq;
 import com.jk.ref_impls.trades.forex.trade_blotter_ai.dto.UserResp;
 import com.jk.ref_impls.trades.forex.trade_blotter_ai.services.wfs.AgentWfTask;
@@ -12,7 +13,7 @@ public class CopilotInvocationTask implements AgentWfTask {
     public static final String BEAN_ID = "copilotInvocationTask";
 
     @Override
-    public int execute(UserQueryReq req, UserResp resp) {
+    public int execute(UserQueryReq req, UserResp resp, UserQueryCtx userQueryCtx) {
         return AppWfConstants.SUCCESS;
     }
 }
