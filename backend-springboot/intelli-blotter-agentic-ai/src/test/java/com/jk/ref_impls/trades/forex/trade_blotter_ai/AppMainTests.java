@@ -1,4 +1,4 @@
-package com.jk.ref_impls.trades.intelliblotteragenticai;
+package com.jk.ref_impls.trades.forex.trade_blotter_ai;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Import;
 
 @Import(TestcontainersConfiguration.class)
 @SpringBootTest
-class IntelliBlotterAgenticAiApplicationTests {
+class AppMainTests {
 
     @Test
     void contextLoads() {

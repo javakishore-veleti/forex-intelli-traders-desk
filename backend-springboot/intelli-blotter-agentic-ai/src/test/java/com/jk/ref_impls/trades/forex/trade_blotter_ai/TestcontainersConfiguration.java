@@ -1,4 +1,4 @@
-package com.jk.ref_impls.trades.intelliblotteragenticai;
+package com.jk.ref_impls.trades.forex.trade_blotter_ai;
 /*
 import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.boot.testcontainers.service.connection.ServiceConnection;
