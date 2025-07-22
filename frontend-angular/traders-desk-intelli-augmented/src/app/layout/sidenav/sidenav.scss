@@ -1,0 +1,13 @@
+.sidenav {
+  background-color: #f0f4ff; // Soft blue background
+}
+
+.mat-list-item {
+  color: #333;
+}
+
+.mat-list-item.active {
+  color: #1976d2;
+  font-weight: bold;
+  border-left: 4px solid #1976d2;
+}

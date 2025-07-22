@@ -1,0 +1,48 @@
+:host {
+  display: block;
+  padding: 1rem;
+}
+
+mat-card {
+  background-color: #e3f2fd; // Light Azure Blue
+  border-left: 5px solid #1976d2; // Primary accent
+}
+
+mat-card-title {
+  font-size: 1.5rem;
+  color: #1976d2;
+}
+
+
+:host {
+  display: block;
+  padding: 1rem;
+}
+
+mat-card {
+  background-color: #e3f2fd; // Light Azure Blue
+  border-left: 5px solid #1976d2; // Primary accent
+  margin-bottom: 1rem;
+}
+
+mat-card-title {
+  font-size: 1.5rem;
+  color: #1976d2;
+}
+
+
+.dashboard-grid {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.summary-card {
+  flex: 1;
+  background-color: #e3f2fd;
+  border-left: 5px solid #1976d2;
+}
+
+.table-card {
+  background-color: #f9f9f9;
+}
